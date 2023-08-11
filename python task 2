@@ -1,0 +1,42 @@
+name = "janis"
+input_name = input("What is your name? ")
+print(f"Hello {name}")
+
+#output = f"what is your name? janis"
+
+print("Please choose your action:")
+actions = {1: "I'll read a book", 2: "I'llpractice in python", 3: "I'll take a rest"}
+
+choice = int(input("Your Choice"))
+if choice == 1:
+    print(actions[1])
+elif choice == 2:
+    print(actions[2])
+elif choice == 3:
+    print(actions[3])
+else:
+    print("Invalid")
+PS G:\bootcamp23> & C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py
+What is your name? & C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py
+Hello janis
+Please choose your action:
+Your choice: & C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py
+Traceback (most recent call last):
+  File "g:\bootcamp23\task2.py", line 10, in <module>
+    choice = int(input("Your choice: "))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '& C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py'
+PS G:\bootcamp23> & C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py
+What is your name? & C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py
+Hello janis
+Please choose your action:
+Your choice: 123
+Invalid
+PS G:\bootcamp23> & C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py
+What is your name? & C:/Users/Touheed/AppData/Local/Programs/Python/Python311/python.exe g:/bootcamp23/task2.py
+Hello janis
+Please choose your action:
+Your choice: 2
+I'llpractice in python
+PS G:\bootcamp23> 
+
